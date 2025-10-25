@@ -43,3 +43,16 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+let userRole1 = "Employee";
+let dietaryService;
+if (userRole1 === "Employee"){
+    dietaryService = "You have access to Dietary Sevice";
+} else if (userRole1 === "Enrolled Member"){
+    dietaryService = " You have access to Dietary Services and one-on-one interaction with a dietician.";
+}else if (userRole1 === "Subscriber") {
+    dietaryService = "You are authorized to have partial access to facilitate Dietary Services only.";
+} else {
+    dietaryService = "You need to enroll or at least subscribe first to avail this facility.";
+}
+console.log("Employee ", dietaryService);
